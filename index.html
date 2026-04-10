@@ -29,9 +29,12 @@
 <body class="mx-36 bg-[#F8FAFC] px-4">
         <!-- header section start -->
         <header class="my-6">
-                <h2 class="font-bold text-2xl my-5">Job Application Tracker</h2>
+                <div class="flex sm:justify-between lg:justify-between items-center">
+                        <h2 class="font-bold text-2xl my-5 sm:mr-7 ">Job Application Tracker</h2>
+                        <input type="checkbox" value="synthwave" class="toggle theme-controller" />
+                </div>
                 <!-- btn section -->
-                <div class="grid grid-cols-3 gap-5">
+                <div class="grid  grid-cols-3  gap-5">
                         <button class="btn btn-xl w-70 rounded-[16px] bg-white hover:bg-blue-200 h-20 ">
                                 <div class="flex flex-col ">
                                         <p class="text-[10px] text-gray-700">Total </p>
@@ -65,20 +68,22 @@
         <main>
                 <!-- header section -->
                 <div class="flex justify-between my-5">
-                        <h3 class="font-semibold text-[21px]">Available Jobs</h3>
+                        <h3 class="font-semibold text-[21px] sm:text-[14px]">Available Jobs</h3>
                         <p class="text-[14px] text-gray-500">8 jobs</p>
                 </div>
                 <!-- button section -->
                 <div>
                         <button class="btn btn-outline hover:bg-blue-400 w-20 ">All</button>
-                        <button class="btn btn-outline hover:bg-red-500">Reject</button>
-                        <button class="btn btn-outline hover:bg-green-400">Accept</button>
+                        <button class="btn btn-outline hover:bg-red-500 w-20">Reject</button>
+                        <button class="btn btn-outline hover:bg-green-400 w-20">Accept</button>
                 </div>
+
                 <!-- card section start -->
                 <section class="my-5 flex flex-col gap-5">
+
                         <!-- card one -->
                         <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
+                                <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
                                                         <div>
@@ -108,9 +113,9 @@
                                         </div>
                                 </div>
                         </div>
-                        <!-- card one -->
+                        <!-- card two -->
                         <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
+                                <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
                                                         <div>
@@ -140,9 +145,9 @@
                                         </div>
                                 </div>
                         </div>
-                        <!-- card one -->
+                        <!-- card three -->
                         <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
+                                <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
                                                         <div>
@@ -172,9 +177,9 @@
                                         </div>
                                 </div>
                         </div>
-                        <!-- card one -->
+                        <!-- card four -->
                         <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
+                                <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
                                                         <div>
@@ -204,9 +209,9 @@
                                         </div>
                                 </div>
                         </div>
-                        <!-- card one -->
+                        <!-- card five -->
                         <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
+                                <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
                                                         <div>
@@ -236,9 +241,9 @@
                                         </div>
                                 </div>
                         </div>
-                        <!-- card one -->
+                        <!-- card six -->
                         <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
+                                <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
                                                         <div>
@@ -268,9 +273,9 @@
                                         </div>
                                 </div>
                         </div>
-                        <!-- card one -->
+                        <!-- card seven -->
                         <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
+                                <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
                                                         <div>
@@ -300,9 +305,9 @@
                                         </div>
                                 </div>
                         </div>
-                        <!-- card one -->
+                        <!-- card eight -->
                         <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
+                                <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
                                                         <div>
@@ -332,105 +337,11 @@
                                         </div>
                                 </div>
                         </div>
-                        <!-- card one -->
-                        <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
-                                        <div class="card-body">
-                                                <div class="flex justify-between">
-                                                        <div>
-                                                                <h2 class="card-title">Mobile First</h2>
-                                                                <p class="text-gray-400">React Native Developer</p>
-                                                        </div>
 
-                                                        <button class="btn rounded-full p-1 hover:bg-yellow-200"><img
-                                                                        src="./Group 1 (1).png" alt=""></button>
-                                                </div>
-
-                                                <div class=" card-actions">
-                                                        <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
-                                                </div>
-                                                <p class="text-gray-500 text-[12px]">
-                                                        Build cross-platform mobile applications using React Native.
-                                                        Work on
-                                                        products used by millions of users worldwide.
-                                                </p>
-                                                <div>
-
-                                                        <button class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
-                                                        <button
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <!-- card one -->
-                        <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
-                                        <div class="card-body">
-                                                <div class="flex justify-between">
-                                                        <div>
-                                                                <h2 class="card-title">Mobile First</h2>
-                                                                <p class="text-gray-400">React Native Developer</p>
-                                                        </div>
-
-                                                        <button class="btn rounded-full p-1 hover:bg-yellow-200"><img
-                                                                        src="./Group 1 (1).png" alt=""></button>
-                                                </div>
-
-                                                <div class=" card-actions">
-                                                        <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
-                                                </div>
-                                                <p class="text-gray-500 text-[12px]">
-                                                        Build cross-platform mobile applications using React Native.
-                                                        Work on
-                                                        products used by millions of users worldwide.
-                                                </p>
-                                                <div>
-
-                                                        <button class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
-                                                        <button
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <!-- card one -->
-                        <div>
-                                <div class="card w-full bg-base-100 card-sm shadow-sm">
-                                        <div class="card-body">
-                                                <div class="flex justify-between">
-                                                        <div>
-                                                                <h2 class="card-title">Mobile First</h2>
-                                                                <p class="text-gray-400">React Native Developer</p>
-                                                        </div>
-
-                                                        <button class="btn rounded-full p-1 hover:bg-yellow-200"><img
-                                                                        src="./Group 1 (1).png" alt=""></button>
-                                                </div>
-
-                                                <div class=" card-actions">
-                                                        <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
-                                                </div>
-                                                <p class="text-gray-500 text-[12px]">
-                                                        Build cross-platform mobile applications using React Native.
-                                                        Work on
-                                                        products used by millions of users worldwide.
-                                                </p>
-                                                <div>
-
-                                                        <button class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
-                                                        <button
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
                 </section>
                 <!-- card section end -->
         </main>
+        <script src="js/index.js"></script>
 </body>
 
 </html>
