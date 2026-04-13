@@ -26,7 +26,7 @@
         </style>
 </head>
 
-<body class="mx-36 bg-[#F8FAFC] px-4">
+<body class="sm:mx-4 md:mx-12 lg:mx-36 bg-[#F8FAFC] px-4">
         <!-- header section start -->
         <header class="my-6">
                 <div class="flex sm:justify-between lg:justify-between items-center">
@@ -34,8 +34,8 @@
                         <input type="checkbox" value="synthwave" class="toggle theme-controller" />
                 </div>
                 <!-- btn section -->
-                <div class="grid  grid-cols-3  gap-5">
-                        <button class="btn btn-xl w-70 rounded-[16px] bg-white hover:bg-blue-200 h-20 ">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <button class="btn  btn-xl w-70 rounded-[16px] bg-white hover:bg-blue-200 h-20 ">
                                 <div class="flex flex-col ">
                                         <p class="text-[10px] text-gray-700">Total </p>
                                         <h3>8</h3>
@@ -71,15 +71,39 @@
                         <h3 class="font-semibold text-[21px] sm:text-[14px]">Available Jobs</h3>
                         <p class="text-[14px] text-gray-500">8 jobs</p>
                 </div>
-                <!-- button section -->
-                <div>
-                        <button class="btn btn-outline hover:bg-blue-400 w-20 ">All</button>
-                        <button class="btn btn-outline hover:bg-red-500 w-20">Reject</button>
-                        <button class="btn btn-outline hover:bg-green-400 w-20">Accept</button>
+                <!-- main section button -->
+                <div class="flex gap-2">
+                        <button onclick="showOnly('card-section')"
+                                class="btn btn-xs sm:btn-sm md:btn-md  btn-outline hover:bg-blue-400 w-20 ">All</button>
+
+                        <button onclick="showOnly('interview')"
+                                class="btn btn-xs sm:btn-sm md:btn-md btn-outline hover:bg-green-400 w-20">Interview</button>
+                        <button onclick="showOnly('reject')"
+                                class="btn btn-xs sm:btn-sm md:btn-md  btn-outline hover:bg-red-500 w-20">Reject</button>
                 </div>
 
+                <!-- interview section start -->
+                <div id="interview" class="card w-full bg-base-100 card-sm shadow-sm my-5 hidden">
+                        <div class="flex flex-col gap-2 justify-center items-center  p-7">
+                                <img src="./jobs.png" alt="">
+                                <h3 class="card-title">No jobs available</h3>
+                                <p class="text-gray-400 text-[12px]">Check back soon for new job opportunities</p>
+                        </div>
+                </div>
+                <!-- interview section end -->
+
+                <!-- reject section start -->
+                <div id="reject" class="card w-full bg-base-100 card-sm shadow-sm my-5 hidden">
+                        <div class="flex flex-col gap-2 justify-center items-center  p-7">
+                                <img src="./jobs.png" alt="">
+                                <h3 class="card-title">No jobs available</h3>
+                                <p class="text-gray-400 text-[12px]">Check back soon for new job opportunities</p>
+                        </div>
+                </div>
+                <!-- reject section end -->
+
                 <!-- card section start -->
-                <section class="my-5 flex flex-col gap-5">
+                <section id="card-section" class="my-5 flex flex-col gap-5 ">
 
                         <!-- card one -->
                         <div>
@@ -95,15 +119,17 @@
                                                                         src="./Group 1 (1).png" alt=""></button>
                                                 </div>
 
-                                                <div class=" card-actions">
+                                                <div class=" card-actions flex items-center gap-3">
                                                         <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
+                                                        <div class="badge badge-secondary">interview</div>
+                                                        <div class="badge badge-accent">Reject</div>
                                                 </div>
                                                 <p class="text-gray-500 text-[12px]">
                                                         Build cross-platform mobile applications using React Native.
                                                         Work on
                                                         products used by millions of users worldwide.
                                                 </p>
-                                                <div>
+                                                <div class="flex gap-3">
 
                                                         <button class="btn btn-outline border-green-700
                                                                 text-green-600 btn-accent">INTERVIEW</button>
@@ -127,15 +153,17 @@
                                                                         src="./Group 1 (1).png" alt=""></button>
                                                 </div>
 
-                                                <div class=" card-actions">
+                                                <div class=" card-actions flex items-center gap-3">
                                                         <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
+                                                        <div class="badge badge-secondary">interview</div>
+                                                        <div class="badge badge-accent">Reject</div>
                                                 </div>
                                                 <p class="text-gray-500 text-[12px]">
                                                         Build cross-platform mobile applications using React Native.
                                                         Work on
                                                         products used by millions of users worldwide.
                                                 </p>
-                                                <div>
+                                                <div class="flex gap-3">
 
                                                         <button class="btn btn-outline border-green-700
                                                                 text-green-600 btn-accent">INTERVIEW</button>
@@ -159,15 +187,17 @@
                                                                         src="./Group 1 (1).png" alt=""></button>
                                                 </div>
 
-                                                <div class=" card-actions">
+                                                <div class=" card-actions flex items-center gap-3">
                                                         <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
+                                                        <div class="badge badge-secondary">interview</div>
+                                                        <div class="badge badge-accent">Reject</div>
                                                 </div>
                                                 <p class="text-gray-500 text-[12px]">
                                                         Build cross-platform mobile applications using React Native.
                                                         Work on
                                                         products used by millions of users worldwide.
                                                 </p>
-                                                <div>
+                                                <div class="flex gap-3">
 
                                                         <button class="btn btn-outline border-green-700
                                                                 text-green-600 btn-accent">INTERVIEW</button>
@@ -191,15 +221,18 @@
                                                                         src="./Group 1 (1).png" alt=""></button>
                                                 </div>
 
-                                                <div class=" card-actions">
+                                                <div class=" card-actions flex items-center gap-3">
                                                         <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
+                                                        <div class="badge badge-secondary">interview</div>
+                                                        <div class="badge badge-accent">Reject</div>
+
                                                 </div>
                                                 <p class="text-gray-500 text-[12px]">
                                                         Build cross-platform mobile applications using React Native.
                                                         Work on
                                                         products used by millions of users worldwide.
                                                 </p>
-                                                <div>
+                                                <div class="flex gap-3">
 
                                                         <button class="btn btn-outline border-green-700
                                                                 text-green-600 btn-accent">INTERVIEW</button>
@@ -223,15 +256,17 @@
                                                                         src="./Group 1 (1).png" alt=""></button>
                                                 </div>
 
-                                                <div class=" card-actions">
+                                                <div class=" card-actions flex items-center gap-3">
                                                         <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
+                                                        <div class="badge badge-secondary">interview</div>
+                                                        <div class="badge badge-accent">Reject</div>
                                                 </div>
                                                 <p class="text-gray-500 text-[12px]">
                                                         Build cross-platform mobile applications using React Native.
                                                         Work on
                                                         products used by millions of users worldwide.
                                                 </p>
-                                                <div>
+                                                <div class="flex gap-3">
 
                                                         <button class="btn btn-outline border-green-700
                                                                 text-green-600 btn-accent">INTERVIEW</button>
@@ -255,15 +290,17 @@
                                                                         src="./Group 1 (1).png" alt=""></button>
                                                 </div>
 
-                                                <div class=" card-actions">
+                                                <div class=" card-actions flex items-center gap-3">
                                                         <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
+                                                        <div class="badge badge-secondary">interview</div>
+                                                        <div class="badge badge-accent">Reject</div>
                                                 </div>
                                                 <p class="text-gray-500 text-[12px]">
                                                         Build cross-platform mobile applications using React Native.
                                                         Work on
                                                         products used by millions of users worldwide.
                                                 </p>
-                                                <div>
+                                                <div class="flex gap-3">
 
                                                         <button class="btn btn-outline border-green-700
                                                                 text-green-600 btn-accent">INTERVIEW</button>
@@ -287,15 +324,17 @@
                                                                         src="./Group 1 (1).png" alt=""></button>
                                                 </div>
 
-                                                <div class=" card-actions">
+                                                <div class=" card-actions flex items-center gap-3">
                                                         <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
+                                                        <div class="badge badge-secondary">interview</div>
+                                                        <div class="badge badge-accent">Reject</div>
                                                 </div>
                                                 <p class="text-gray-500 text-[12px]">
                                                         Build cross-platform mobile applications using React Native.
                                                         Work on
                                                         products used by millions of users worldwide.
                                                 </p>
-                                                <div>
+                                                <div class="flex gap-3">
 
                                                         <button class="btn btn-outline border-green-700
                                                                 text-green-600 btn-accent">INTERVIEW</button>
@@ -319,15 +358,17 @@
                                                                         src="./Group 1 (1).png" alt=""></button>
                                                 </div>
 
-                                                <div class=" card-actions">
+                                                <div class=" card-actions flex items-center gap-3">
                                                         <button class="btn bg-[#EEF4FF] border-[0]">NOT APPLIED</button>
+                                                        <div class="badge badge-secondary">interview</div>
+                                                        <div class="badge badge-accent">Reject</div>
                                                 </div>
                                                 <p class="text-gray-500 text-[12px]">
                                                         Build cross-platform mobile applications using React Native.
                                                         Work on
                                                         products used by millions of users worldwide.
                                                 </p>
-                                                <div>
+                                                <div class="flex gap-3">
 
                                                         <button class="btn btn-outline border-green-700
                                                                 text-green-600 btn-accent">INTERVIEW</button>
@@ -341,6 +382,7 @@
                 </section>
                 <!-- card section end -->
         </main>
+        <script src="js/toggle.js"></script>
         <script src="js/index.js"></script>
 </body>
 
