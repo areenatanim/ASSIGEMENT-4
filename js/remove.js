@@ -25,10 +25,8 @@ function removeCard(jobId) {
         }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-        // You can add delete buttons to each card like this:
-        // <button onclick="removeCard(1)" class="btn btn-xs btn-error ml-auto">Delete</button>
-});
+
+
 
 // Export global function
 window.removeCard = removeCard;

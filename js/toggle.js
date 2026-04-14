@@ -1,22 +1,22 @@
 // showOnly function for toggle
 
 
-function showOnly(id) {
-        const interview = document.getElementById("interview");
-        const reject = document.getElementById("reject");
-        const cardSection = document.getElementById("card-section");
+// function showOnly(id) {
+//         const interview = document.getElementById("interview");
+//         const reject = document.getElementById("reject");
+//         const cardSection = document.getElementById("card-section");
 
-        interview.classList.add("hidden");
-        reject.classList.add("hidden");
-        cardSection.classList.add("hidden")
-
-
-        const selected = document.getElementById(id);
-        selected.classList.remove("hidden");
+//         interview.classList.add("hidden");
+//         reject.classList.add("hidden");
+//         cardSection.classList.add("hidden")
 
 
+//         const selected = document.getElementById(id);
+//         selected.classList.remove("hidden");
 
-}
+
+
+// }
 
 
 
@@ -45,7 +45,7 @@ function showOnly(sectionId) {
                         if (sectionId === 'card-section') {
                                 btn.classList.add('hover:bg-blue-400');
                         } else if (sectionId === 'interview') {
-                                btn.classList.add('hover:bg-green-400', 'btn-secondary');
+                                btn.classList.add('hover:bg-green-600', 'btn-secondary');
                         } else if (sectionId === 'reject') {
                                 btn.classList.add('hover:bg-red-500', 'btn-accent');
                         }
