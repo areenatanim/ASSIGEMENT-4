@@ -42,21 +42,21 @@
                         <button class="btn  btn-xl w-70 rounded-[16px] bg-white hover:bg-blue-200 h-20 ">
                                 <div class="flex flex-col ">
                                         <p class="text-[10px] text-gray-700">Total </p>
-                                        <h3>8</h3>
+                                        <h3 id="total-btn">8</h3>
 
                                 </div>
                         </button>
                         <button class="btn btn-xl w-70 rounded-[16px] bg-white hover:bg-blue-200 h-20 ">
                                 <div class="flex flex-col ">
                                         <p class="text-[10px] text-gray-700">interview </p>
-                                        <h3 class="text-green-500">0</h3>
+                                        <h3 id="total-interview" class="text-green-500">0</h3>
 
                                 </div>
                         </button>
                         <button class="btn btn-xl w-70 rounded-[16px] bg-white hover:bg-blue-200 h-20 ">
                                 <div class="flex flex-col ">
-                                        <p class="text-[10px] text-gray-700">Total </p>
-                                        <h3 class="text-red-600">0</h3>
+                                        <p class="text-[10px] text-gray-700">Reject </p>
+                                        <h3 id="total-reject" class="text-red-600">0</h3>
 
                                 </div>
                         </button>
@@ -110,7 +110,7 @@
                 <section id="card-section" class="my-5 flex flex-col gap-5 ">
 
                         <!-- card one -->
-                        <div id="card-one">
+                        <div id="card-1">
                                 <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
@@ -119,8 +119,7 @@
                                                                 <p class="text-gray-400">React Native Developer</p>
                                                         </div>
 
-                                                        <button onclick="delate('card-one')"
-                                                                class="btn rounded-full p-1 hover:bg-yellow-200"><img
+                                                        <button class="btn rounded-full p-1 hover:bg-yellow-200"><img
                                                                         src="./Group 1 (1).png" alt=""></button>
                                                 </div>
 
@@ -147,16 +146,16 @@
                                                 </p>
                                                 <div class="flex gap-3">
 
-                                                        <button onclick="showOnly('reject-badge')" class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
-                                                        <button onclick="showOnly('interview-badge')"
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
+                                                        <button
+                                                                class="btn btn-outline border-green-700 text-green-600 interview-btn">INTERVIEW</button>
+                                                        <button
+                                                                class="btn btn-outline border-red-600 text-red-600 reject-btn">REJECTED</button>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <!-- card two -->
-                        <div>
+                        <div id="card-2">
                                 <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
@@ -181,16 +180,16 @@
                                                 </p>
                                                 <div class="flex gap-3">
 
-                                                        <button class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
                                                         <button
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
+                                                                class="btn btn-outline border-green-700 text-green-600 interview-btn">INTERVIEW</button>
+                                                        <button
+                                                                class="btn btn-outline border-red-600 text-red-600 reject-btn">REJECTED</button>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <!-- card three -->
-                        <div>
+                        <div id="card-3">
                                 <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
@@ -215,16 +214,16 @@
                                                 </p>
                                                 <div class="flex gap-3">
 
-                                                        <button class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
                                                         <button
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
+                                                                class="btn btn-outline border-green-700 text-green-600 interview-btn">INTERVIEW</button>
+                                                        <button
+                                                                class="btn btn-outline border-red-600 text-red-600 reject-btn">REJECTED</button>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <!-- card four -->
-                        <div>
+                        <div id="card-4">
                                 <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
@@ -250,16 +249,16 @@
                                                 </p>
                                                 <div class="flex gap-3">
 
-                                                        <button class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
                                                         <button
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
+                                                                class="btn btn-outline border-green-700 text-green-600 interview-btn">INTERVIEW</button>
+                                                        <button
+                                                                class="btn btn-outline border-red-600 text-red-600 reject-btn">REJECTED</button>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <!-- card five -->
-                        <div>
+                        <div id="card-5">
                                 <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
@@ -284,16 +283,16 @@
                                                 </p>
                                                 <div class="flex gap-3">
 
-                                                        <button class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
                                                         <button
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
+                                                                class="btn btn-outline border-green-700 text-green-600 interview-btn">INTERVIEW</button>
+                                                        <button
+                                                                class="btn btn-outline border-red-600 text-red-600 reject-btn">REJECTED</button>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <!-- card six -->
-                        <div>
+                        <div id="card-6">
                                 <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
@@ -318,16 +317,16 @@
                                                 </p>
                                                 <div class="flex gap-3">
 
-                                                        <button class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
                                                         <button
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
+                                                                class="btn btn-outline border-green-700 text-green-600 interview-btn">INTERVIEW</button>
+                                                        <button
+                                                                class="btn btn-outline border-red-600 text-red-600 reject-btn">REJECTED</button>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <!-- card seven -->
-                        <div>
+                        <div id="card-7">
                                 <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
@@ -352,16 +351,16 @@
                                                 </p>
                                                 <div class="flex gap-3">
 
-                                                        <button class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
                                                         <button
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
+                                                                class="btn btn-outline border-green-700 text-green-600 interview-btn">INTERVIEW</button>
+                                                        <button
+                                                                class="btn btn-outline border-red-600 text-red-600 reject-btn">REJECTED</button>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <!-- card eight -->
-                        <div>
+                        <div id="card-8">
                                 <div class="item card w-full bg-base-100 card-sm shadow-sm">
                                         <div class="card-body">
                                                 <div class="flex justify-between">
@@ -386,10 +385,10 @@
                                                 </p>
                                                 <div class="flex gap-3">
 
-                                                        <button class="btn btn-outline border-green-700
-                                                                text-green-600 btn-accent">INTERVIEW</button>
                                                         <button
-                                                                class="btn btn-outline border-red-600 text-red-600 btn-secondary">REJECTED</button>
+                                                                class="btn btn-outline border-green-700 text-green-600 interview-btn">INTERVIEW</button>
+                                                        <button
+                                                                class="btn btn-outline border-red-600 text-red-600 reject-btn">REJECTED</button>
                                                 </div>
                                         </div>
                                 </div>
@@ -398,9 +397,9 @@
                 </section>
                 <!-- card section end -->
         </main>
-        <script src="js/toggle.js"></script>
-        <script src="js/remove.js"></script>
-        <!-- <script src="js/index.js"></script> -->
+        <script src="js/count.js" defer></script>
+        <script src="js/toggle.js" defer></script>
+        <script src="js/remove.js" defer></script>
 </body>
 
 </html>
